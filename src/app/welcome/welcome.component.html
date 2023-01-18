@@ -1,0 +1,55 @@
+<div class="container">
+    <p>welcome  {{name}}</p>
+</div>
+    
+<button (click)="buttonClick()">Click me</button>
+    <p *ngIf="age<11">You are a kid</p>
+
+    <p *ngIf="age>10">You are not a kid</p>
+
+    <ul>
+        <li *ngFor="let card of creditCards">{{card}}</li>
+    </ul>
+
+    <table class="table">
+        <thead>
+            <th></th>
+            <tr>Credit Card Type</tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let card of creditCards">
+                <td>{{card}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
